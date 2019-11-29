@@ -9,8 +9,7 @@ If you need more information about the aim and expected outcome, also the syllab
 ### Course Material
 | Topic        | Teacher | Slide| Workshop|
 |:-|:-|:-|:-|
-| **Introduction to Systems Biology** | Adil Mardinoglu| Link | N/A  |
-| **Transcriptomics**| Muhammad Arif| [Link](https://github.com/sysmedicine/phd2020/raw/master/transcriptomics/slides/Sysmedicine_new.pptx) | [Link](https://github.com/sysmedicine/phd2020/tree/master/transcriptomics)  |
+| **Introduction to Systems Biology**| Adil Mardinoglu | Link | |
 
 ### Mini Seminar
 
