@@ -7,12 +7,11 @@ Welcome to the course! This webpage will be the main website for all information
 If you need more information about the aim and expected outcome, also the syllabus in general, please refer to the [course sylabus website](http://sysmedicine.com/courses/phd2020/).
 
 ### Course Material
-
 | Topic        | Teacher | Slide          | Workshop |
 |:-|:-|:-|:-|
 | **Introduction to Systems Biology**| Adil Mardinoglu| Link | N/A  |
 | **Proteomics**| Fredrik Edfors| Link | Link  |
-| **Transcriptomics**| Muhammad Arif| [Link] (https://github.com/sysmedicine/phd2020/blob/master/transcriptomics/slides/Sysmedicine_new.pptx) | [Link] (https://github.com/sysmedicine/phd2020/tree/master/transcriptomics)  |
+| **Transcriptomics**| Muhammad Arif| [Link](https://github.com/sysmedicine/phd2020/blob/master/transcriptomics/slides/Sysmedicine_new.pptx) | [Link](https://github.com/sysmedicine/phd2020/tree/master/transcriptomics)  |
 | **Metabolomics**| Abdellah Tebani| Link | Link  |
 | **Metagenomics**| Ozlem Altay| Link | Link  |
 | **Genome Scale Metabolic Modelling**| Cheng Zhang | Link | Link  |
