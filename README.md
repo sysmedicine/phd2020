@@ -17,6 +17,7 @@ http://sysmedicine.com/courses/phd2020/
 | **Metabolomics**| Abdellah Tebani| Link | Link  |
 | **Metagenomics**| Ozlem Altay| Link | Link  |
 | **Genome Scale Metabolic Modelling**| Cheng Zhang | Link | Link  |
+| **Topic**| Xiangyu Li | Link | Link  |
 | **Multi-Omics Integration**| Rui Benfeitas| Link | Link  |
 
 ### Mini Seminar
