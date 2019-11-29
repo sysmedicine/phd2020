@@ -6,6 +6,12 @@ Welcome to the course! This webpage will be the main website for all information
 
 If you need more information about the aim and expected outcome, also the syllabus in general, please refer to the [course sylabus website](http://sysmedicine.com/courses/phd2020/).
 
+### Pre-course Preparation
+
+In order to ensure the smoothness of the workshop, please follow the instruction in this Workshop Preparation page. Please do this as soon as humanly possible and contact us if you find any problem during the preparation
+
+**OBS:** This step might take a while to be completed, so please do it **BEFORE** the course.
+
 ### Course Material
 
 | Topic| Teacher| Slide| Workshop|
