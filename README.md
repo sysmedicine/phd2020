@@ -9,15 +9,15 @@ If you need more information about the aim and expected outcome, also the syllab
 ### Course Material
 
 
-| Topic        | Teacher | Slide|
-|:-|:-|:-|
-| **Topic 1**| Keynote 1| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote1.pptx) |
-| **Topic 2**| Keynote 2| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote2.pptx)  |
-| **Topic 3**| Keynote 3| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote3.pptx)  |
+| Topic        | Teacher | Slide| Workshop|
+|:-|:-|:-|:-|
+| **Topic 1**| Keynote 1| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote1.pptx) | |
+| **Topic 2**| Keynote 2| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote2.pptx)  | |
+| **Topic 3**| Keynote 3| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote3.pptx)  | |
 
 ### Mini Seminar
 
-| Topic        | Teacher | Slide|
+| Topic        | Keynote Speaker | Slide|
 |:-|:-|:-|
 | **Topic 1**| Keynote 1| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote1.pptx) |
 | **Topic 2**| Keynote 2| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote2.pptx)  |
