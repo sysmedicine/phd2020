@@ -7,10 +7,9 @@ Welcome to the course! This webpage will be the main website for all information
 If you need more information about the aim and expected outcome, also the syllabus in general, please refer to the [course sylabus website](http://sysmedicine.com/courses/phd2020/).
 
 ### Course Material
-| Topic        | Teacher | Slide          | Workshop |
+| Topic| Teacher| Slide| Workshop|
 |:-|:-|:-|:-|
 | **Introduction to Systems Biology**| Adil Mardinoglu| Link | N/A  |
-| **Proteomics**| Fredrik Edfors| Link | Link  |
 
 
 ### Mini Seminar
