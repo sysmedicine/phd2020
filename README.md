@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+##  PhD Course 2020 Systems Biology of Human Metabolism and Gut Microbiome
 
-You can use the [editor on GitHub](https://github.com/sysmedicine/phd2020/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome to the course! This webpage will be the main website for all informations and materials throughout the course. If you have any questions/requests, contact muhammad.arif [at] scilifelab.se
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Course Syllabus
 
-### Markdown
+If you need more information about the aim and expected outcome, also the syllabus in general, please refer to the website below:
+http://sysmedicine.com/courses/phd2020/
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Course Material
 
-```markdown
-Syntax highlighted code block
+| Topic        | Teacher | Slide          | Workshop |
+|:-|:-|:-|:-|
+| **Introduction to Systems Biology**| Adil Mardinoglu| Link | N/A  |
+| **Proteomics**| Fredrik Edfors| Link | Link  |
+| **Transcriptomics**| Muhammad Arif| Link | Link  |
+| **Metabolomics**| Abdellah Tebani| Link | Link  |
+| **Metagenomics**| Ozlem Altay| Link | Link  |
+| **Genome Scale Metabolic Modelling**| Cheng Zhang | Link | Link  |
+| **Multi-Omics Integration**| Rui Benfeitas| Link | Link  |
 
-# Header 1
-## Header 2
-### Header 3
+### Mini Seminar
 
-- Bulleted
-- List
+| Topic        | Teacher | Slide|
+|:-|:-|:-|
+| **Topic 1**| Keynote 1| Link |
+| **Topic 2**| Keynote 2| Link |
+| **Topic 3**| Keynote 3| Link |
 
-1. Numbered
-2. List
+### Student Presentations
+In this course, we will have students presentations. All group has 15 minutes to present one state-of-the-art paper from Systems Biology field, followed by 15 minutes Q&A. You will be given the group distribution by first day of the course and also you will have 90 minutes on Thursday to finish the presentation
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sysmedicine/phd2020/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+| Topic        | Members | Link to paper|
+|:-|:-|:-|
+| **Topic 1**| Keynote 1| Link |
+| **Topic 2**| Keynote 2| Link |
+| **Topic 3**| Keynote 3| Link |
+| **Topic 4**| Keynote 4| Link |
+| **Topic 5**| Keynote 5| Link |
