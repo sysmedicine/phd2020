@@ -33,4 +33,5 @@ res <- deseq(haha)
 ```
 
 Result will look like:
+
 ![deseq](img/deseq.png)
