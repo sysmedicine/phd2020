@@ -1,4 +1,4 @@
-##  PhD Course 2020 Systems Biology of Human Metabolism and Gut Microbiome
+##  Systems Biology of Human Metabolism and Gut Microbiome
 
 Welcome to the course! This webpage will be the main website for all informations and materials throughout the course. If you have any questions/requests, contact muhammad.arif [at] scilifelab.se
 
