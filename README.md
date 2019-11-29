@@ -10,6 +10,7 @@ If you need more information about the aim and expected outcome, also the syllab
 
 | Topic| Teacher| Slide| Workshop|
 |:-|:-|:-|:-|
+| **Introduction to Systems Biology**| Adil Mardinoglu| Link | N/A  |
 | **Proteomics**| Fredrik Edfors| Link | Link  |
 | **Metabolomics**| Abdellah Tebani| Link | Link  |
 | **Metagenomics**| Ozlem Altay| Link | Link  |
