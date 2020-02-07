@@ -37,7 +37,7 @@ This step is the lightweight step with relatively less usage of your space. But 
 > wget https://raw.githubusercontent.com/sysmedicine/phd2020/master/LabPrep/env.yaml
 
 4. Create a new conda environment with the file
-> conda env create -p phd2020 -f env.yaml
+> conda env create -f env.yaml
 
 ### Option 2: Using Virtual Machine
 We require around 7 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
