@@ -89,6 +89,8 @@ The steps were validated to work properly in the OS below:
 4. Create a new conda environment with the file
 > conda env create -f env.yaml
 
+**OBS: In some computers, the packages installed under #Metagenomics can cause a problem. Our advice is if you have a persistent error, try to comment/remove all the packages under #Metagenomics in the yaml file.**
+
 5. Install R and Rstudio (you can use conda or standalone). For Ubuntu, please follow [this link](https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-18-04) to install the latest R. Make sure that you have the latest version (3.6)
 
 6. (Ubuntu Only) Install with apt-get several libraries
