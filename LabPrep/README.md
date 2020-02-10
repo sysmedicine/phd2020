@@ -20,6 +20,15 @@ We require around 10 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher
 4. Import the virtual machine to Virtual Box
 5. When needed, use sysmedicine as both username and password to log in to the virtual machine.
 
+With virtual machine, there are several ways to access the terminal:
+1. Directly from virtual box, there's an installed GUI.
+2. "Remotely" via SSH --> (can be done via terminal in Linux/MacOSX, or MobaXterm in Windows)
+
+Inside the virtual machine, all the necessary software and GUI has been installed. In order to access it remotely, check the IP address of the virtual machine by "ifconfig | grep inet" and look for the IP address 192.xxx.xxx.xxx
+
+1. To access Rstudio: http://192.xxx.xxx.xxx:8787
+2. To access Jupyter Notebook: http://192.xxx.xxx.xxx:8888
+
 **OBS: Don't update the OS or the conda packages unless instructed by the teachers.**
 
 ### Option 2: Download Conda Environment
