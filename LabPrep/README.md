@@ -105,6 +105,8 @@ The steps were validated to work properly in the OS below:
 
 9. Install MinPath by following [this link](https://omics.informatics.indiana.edu/MinPath/)
 
+10. [Install SHORTBRED](https://huttenhower.sph.harvard.edu/shortbred). Don't forget to get the license for USEARCH. Blast, Muscle, CD-HIT and Biopython requirement has already been installed in the previous step.
+
 ## Problems During Installation
 
 If you follow the steps above, hopefully no problem will arise. In case of error, please first consult Google. If there's no solution to your problem, email muhammad.arif [at] scilifelab [dot] se the error message. If problem persists, please consider using the virtual machine. 
