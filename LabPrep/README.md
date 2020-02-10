@@ -11,7 +11,8 @@ In order to make sure that we have a smooth and on-time workshop sessions, pleas
 We will run most of our softwares inside a conda environment. You can either download the conda environment or download the pre-installed virtual machine (with virtual box)
 
 
-### Option 1: Using Virtual Machine
+### Option 1: Using Virtual Machine with GUI (Complexity: Lowest; Download Size: Highest)
+Download Size: 8 Gb
 We require around 25 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
 
 1. Download Virtual Box: https://www.virtualbox.org/wiki/Downloads
@@ -33,7 +34,27 @@ Inside the virtual machine, all the necessary software and GUI has been installe
 
 **OBS: Don't update the OS or the conda packages unless instructed by the teachers.**
 
-### Option 2: Download Conda Environment
+### Option 2: Using Virtual Machine no GUI (Complexity: Intermediate; Download Size: Intermediate)
+Download Size: 8 Gb
+We require around 25 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
+
+1. Download Virtual Box: https://www.virtualbox.org/wiki/Downloads
+2. Download the pre-installed Ubuntu virtual machine
+3. Click on the option "File" --> "Host-network manager" in the toolbar and click "Create" until you see a "vboxnet0" in the table.
+4. Import the virtual machine to Virtual Box
+5. When needed, use sysmedicine as both username and password to log in to the virtual machine.
+6. Since there's no GUI in the server, EncyclopeDIA has to be installed manually in your own computer. Please follow [this link](https://bitbucket.org/searleb/encyclopedia/wiki/Home) to install EncyclopeDIA
+
+The virtual machine can be acccessed "Remotely" via SSH --> (can be done via terminal in Linux/MacOSX, or MobaXterm in Windows)
+
+Inside the virtual machine, all the necessary softwares have been installed. In order to access it remotely, check the IP address of the virtual machine by "ifconfig | grep inet" in terminal inside the VM and look for the IP address 192.xxx.xxx.xxx
+
+1. To access Rstudio: http://192.xxx.xxx.xxx:8787
+2. (After typing "jupyterhub" in terminal) To access Jupyter Notebook: http://192.xxx.xxx.xxx:8000
+
+**OBS: Don't update the OS or the conda packages unless instructed by the teachers.**
+
+### Option 3: Download Conda Environment (Complexity: Highest;Download Size: Lowest)
 This step is the lightweight step with relatively less usage of your space. But due to the complications with different OS, we would recommend this if you are familiar with conda or unix, with Linux/MacOSX computers. Otherwise, option 1 is the best options
 
 The steps were validated to work properly in the OS below:
