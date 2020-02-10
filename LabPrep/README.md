@@ -36,12 +36,12 @@ Inside the virtual machine, all the necessary software and GUI has been installe
 **OBS: Don't update the OS or the conda packages unless instructed by the teachers.**
 
 ### Option 2: Using Virtual Machine no GUI (Complexity: Intermediate; Download Size: Intermediate)
-Download Size: 4.7 Gb
+Download Size: 4.4 Gb
 
-We require around 25 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
+We require around 15 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
 
 1. Download Virtual Box: https://www.virtualbox.org/wiki/Downloads
-2. Download the pre-installed Ubuntu virtual machine without GUI on [this link]()
+2. Download the pre-installed Ubuntu virtual machine without GUI on [this link](https://kth.box.com/s/isnho6tr65omzvxcdnrqp85gyuyv84zc)
 3. Click on the option "File" --> "Host-network manager" in the toolbar and click "Create" until you see a "vboxnet0" in the table.
 4. Import the virtual machine to Virtual Box
 5. When needed, use sysmedicine as both username and password to log in to the virtual machine.
