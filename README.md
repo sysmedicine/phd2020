@@ -6,6 +6,14 @@ Welcome to the course! This webpage will be the main website for all information
 
 If you need more information about the aim and expected outcome, also the syllabus in general, please refer to the [course sylabus website](http://sysmedicine.com/courses/phd2020/).
 
+## Course Location
+
+Air Room @ Science For Life Laboratory (SciLifeLab)
+
+Closest Bus Stop: Karolinska Institutet Biomedicum
+
+Google Maps: https://goo.gl/maps/nBkAmDXNd7te1He47
+
 ## Pre-course Preparation
 
 In order to ensure the smoothness of the workshop, please follow the instruction in this [Workshop Preparation](https://github.com/sysmedicine/phd2020/tree/master/LabPrep) page. Please do this as soon as humanly possible and contact us if you find any problem during the preparation
