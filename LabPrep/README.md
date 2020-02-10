@@ -17,7 +17,7 @@ Download Size: 8 Gb
 We require around 25 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
 
 1. Download Virtual Box: https://www.virtualbox.org/wiki/Downloads
-2. Download the pre-installed Ubuntu virtual machine
+2. Download the pre-installed Ubuntu virtual machine with GUI on [this link]()
 3. Click on the option "File" --> "Host-network manager" in the toolbar and click "Create" until you see a "vboxnet0" in the table.
 4. Import the virtual machine to Virtual Box
 5. When needed, use sysmedicine as both username and password to log in to the virtual machine.
@@ -36,12 +36,12 @@ Inside the virtual machine, all the necessary software and GUI has been installe
 **OBS: Don't update the OS or the conda packages unless instructed by the teachers.**
 
 ### Option 2: Using Virtual Machine no GUI (Complexity: Intermediate; Download Size: Intermediate)
-Download Size: 8 Gb
+Download Size: 4.7 Gb
 
 We require around 25 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
 
 1. Download Virtual Box: https://www.virtualbox.org/wiki/Downloads
-2. Download the pre-installed Ubuntu virtual machine
+2. Download the pre-installed Ubuntu virtual machine without GUI on [this link]()
 3. Click on the option "File" --> "Host-network manager" in the toolbar and click "Create" until you see a "vboxnet0" in the table.
 4. Import the virtual machine to Virtual Box
 5. When needed, use sysmedicine as both username and password to log in to the virtual machine.
@@ -108,6 +108,14 @@ The steps were validated to work properly in the OS below:
 9. Install MinPath by following [this link](https://omics.informatics.indiana.edu/MinPath/)
 
 10. [Install SHORTBRED](https://huttenhower.sph.harvard.edu/shortbred). Don't forget to get the license for USEARCH. Blast, Muscle, CD-HIT and Biopython requirement has already been installed in the previous step.
+
+## Conda Environment
+
+For all options, some packages are installed under conda environment. By default, the name of the environment is "phd2020". To activate the environment, type:
+> conda activate phd2020
+
+Until you see something like this in your terminal:
+> **(phd2020)** sysmedicine@sysmedicine-vm $ 
 
 ## Problems During Installation
 
