@@ -8,8 +8,7 @@ In order to make sure that we have a smooth and on-time workshop sessions, pleas
 **Any problem that you find prior to the course, please email muhammad.arif [at] scilifelab [dot] se**
 
 ## Preparation Steps
-We will run most of our softwares inside a conda environment. You can either download the conda environment or download the pre-installed virtual machine (with virtual box)
-
+We will run most of our softwares inside a conda environment. You can either download the conda environment or download the pre-installed virtual machine (with virtual box). Please pick one of out of three options below.
 
 ### Option 1: Using Virtual Machine with GUI (Complexity: Lowest; Download Size: Highest)
 Download Size: 8 Gb
