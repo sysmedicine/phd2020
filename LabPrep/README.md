@@ -12,7 +12,7 @@ We will run most of our softwares inside a conda environment. You can either dow
 
 
 ### Option 1: Using Virtual Machine
-We require around 10 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
+We require around 25 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
 
 1. Download Virtual Box: https://www.virtualbox.org/wiki/Downloads
 2. Download the pre-installed Ubuntu virtual machine
