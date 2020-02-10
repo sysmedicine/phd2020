@@ -13,6 +13,7 @@ We will run most of our softwares inside a conda environment. You can either dow
 
 ### Option 1: Using Virtual Machine with GUI (Complexity: Lowest; Download Size: Highest)
 Download Size: 8 Gb
+
 We require around 25 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
 
 1. Download Virtual Box: https://www.virtualbox.org/wiki/Downloads
@@ -36,6 +37,7 @@ Inside the virtual machine, all the necessary software and GUI has been installe
 
 ### Option 2: Using Virtual Machine no GUI (Complexity: Intermediate; Download Size: Intermediate)
 Download Size: 8 Gb
+
 We require around 25 Gb of empty space in harddrive and mininum 4 Gb RAM. Higher RAM is definitely better.
 
 1. Download Virtual Box: https://www.virtualbox.org/wiki/Downloads
