@@ -1,0 +1,39 @@
+channels:
+    - bioconda
+    - conda-forge
+    - rdonnelly
+    - defaults
+    - biobakery
+dependencies:
+    # Basic
+    - jupyter
+    - jupyterlab
+    - pandas
+    - scipy
+    - seaborn
+    - matplotlib
+    - numpy
+    - scipy
+    - scikit-learn
+
+    # MultiOmics
+    - leidenalg
+    - python-igraph
+    - pycairo
+    - glpk
+    - gseapy
+    
+    #Proteomics
+    - encyclopedia
+
+    # Transcriptomics
+    - kallisto
+    
+    # Metagenomics
+    - metaphlan2
+    - shortbred
+    - humann2
+    
+    # Metabolomics --> Web based
+    
+    # GEM
