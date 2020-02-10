@@ -20,6 +20,10 @@ In order to ensure the smoothness of the workshop, please follow the instruction
 
 **OBS:** This step might take a while to be completed, so please do it **BEFORE** the course.
 
+## Course Schedule (Tentative)
+
+![alt text](https://github.com/sysmedicine/phd2020/raw/master/img/schedule.png "Schedule")
+
 ## Course Material
 
 | Topic| Teacher| Slide| Workshop|
