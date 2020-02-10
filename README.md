@@ -8,7 +8,7 @@ If you need more information about the aim and expected outcome, also the syllab
 
 ## Pre-course Preparation
 
-In order to ensure the smoothness of the workshop, please follow the instruction in this Workshop Preparation page. Please do this as soon as humanly possible and contact us if you find any problem during the preparation
+In order to ensure the smoothness of the workshop, please follow the instruction in this [Workshop Preparation](https://github.com/sysmedicine/phd2020/tree/master/LabPrep) page. Please do this as soon as humanly possible and contact us if you find any problem during the preparation
 
 **OBS:** This step might take a while to be completed, so please do it **BEFORE** the course.
 
