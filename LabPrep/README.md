@@ -64,6 +64,8 @@ The steps were validated to work properly in the OS below:
 
 **OBS: Based on past experience, there were too many problems between conda and Windows, especially the newer Windows versions. If you  want to use conda in Windows, do it at your own risk. We will not be supporting any questions about how to use the conda environment inside windows. Our answer will only be: use the provided virtual machine in Option 2**
 
+**If you would like to use Conda Environment on Windows 10, you can refer to [this link](https://nbisweden.github.io/workshop-scRNAseq/conda_instructions.html), and use our environment yaml file instead of theirs**
+
 1. Install Miniconda in your computer. To install miniconda:
 > #MacOSX  
 > curl -o Miniconda3-latest-MacOSX-x86_64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh  
