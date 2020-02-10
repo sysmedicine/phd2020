@@ -64,7 +64,7 @@ The steps were validated to work properly in the OS below:
 4. Create a new conda environment with the file
 > conda env create -f env.yaml
 
-5. Install R and Rstudio (you can use conda or standalone). For Ubuntu, please follow [this link] (https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-18-04) to install the latest R. Make sure that you have the latest version (3.6)
+5. Install R and Rstudio (you can use conda or standalone). For Ubuntu, please follow [this link](https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-18-04) to install the latest R. Make sure that you have the latest version (3.6)
 
 6. (Ubuntu Only) Install with apt-get several libraries
 > sudo apt-get install libcurl4-openssl-dev libssl-dev libxml2-dev
