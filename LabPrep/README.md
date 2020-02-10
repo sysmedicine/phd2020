@@ -27,7 +27,7 @@ With virtual machine, there are several ways to access the terminal:
 Inside the virtual machine, all the necessary software and GUI has been installed. In order to access it remotely, check the IP address of the virtual machine by "ifconfig | grep inet" and look for the IP address 192.xxx.xxx.xxx
 
 1. To access Rstudio: http://192.xxx.xxx.xxx:8787
-2. To access Jupyter Notebook: http://192.xxx.xxx.xxx:8888
+2. (After typing "jupyterhub" in terminal) To access Jupyter Notebook: http://192.xxx.xxx.xxx:8000
 
 **OBS: Don't update the OS or the conda packages unless instructed by the teachers.**
 
