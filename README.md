@@ -12,7 +12,7 @@ Air Room @ Science For Life Laboratory (SciLifeLab)
 
 Closest Bus Stop: Karolinska Institutet Biomedicum
 
-Google Maps: https://goo.gl/maps/nBkAmDXNd7te1He47
+Google Maps: [Tomtebodavägen 23a, 171 65 Solna](https://goo.gl/maps/nBkAmDXNd7te1He47)
 
 ## Pre-course Preparation
 
@@ -28,30 +28,30 @@ In order to ensure the smoothness of the workshop, please follow the instruction
 
 | Topic| Teacher| Slide| Workshop|
 |:-|:-|:-|:-|
-| **Introduction to Systems Biology**| Adil Mardinoglu| Link | N/A  |
-| **Proteomics**| Fredrik Edfors| Link | Link  |
-| **Transcriptomics**| Muhammad Arif| [Link](https://github.com/sysmedicine/phd2020/raw/master/transcriptomics/slides/Sysmedicine_new.pptx) | [Link](https://github.com/sysmedicine/phd2020/tree/master/transcriptomics)  |
-| **Metabolomics**| Abdellah Tebani| Link | Link  |
+| **Introduction to Systems Biology**| Adil Mardinoglu| [Link]() | N/A  |
+| **Proteomics**| Fredrik Edfors| [Link]() | [Link]()  |
+| **Transcriptomics**| Muhammad Arif| [Link]() | [Link]()  |
+| **Metabolomics**| Abdellah Tebani| [Link]() | [Link]()  |
 | **Metagenomics**| Ozlem Altay| Link | Link  |
-| **Genome Scale Metabolic Modelling**| Cheng Zhang | Link | Link  |
-| **Topic**| Xiangyu Li | Link | Link  |
-| **Multi-Omics Integration**| Rui Benfeitas| Link | Link  |
+| **Genome Scale Metabolic Modelling**| Cheng Zhang | [Link]() | [Link]()  |
+| **Topic**| Xiangyu Li | [Link]() | [Link]()  |
+| **Multi-Omics Integration**| Rui Benfeitas| [Link]() | [Link]()  |
 
 ## Mini Seminar
 
 | Topic        | Keynote Speaker | Slide|
 |:-|:-|:-|
-| **Topic 1**| Keynote 1| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote1.pptx) |
-| **Topic 2**| Keynote 2| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote2.pptx)  |
-| **Topic 3**| Keynote 3| [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/keynote3.pptx)  |
+| **Topic 1**| Keynote 1| [Link]() |
+| **Topic 2**| Keynote 2| [Link]()  |
+| **Topic 3**| Keynote 3| [Link]()  |
 
 ## Student Presentations
 In this course, we will have students presentations. All group has 15 minutes to present one state-of-the-art paper from Systems Biology field, followed by 15 minutes Q&A. You will be given the group distribution by first day of the course and also you will have 90 minutes on Thursday to finish the presentation
 
 | Topic        | Members | Link to paper|
 |:-|:-|:-|
-| **Topic 1**| GM1 | [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper1.pdf)  |
-| **Topic 2**| GM2 | [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper2.pdf)  |
-| **Topic 3**| GM3 | [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper3.pdf)  |
-| **Topic 4**| GM4 | [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper4.pdf)  |
-| **Topic 5**| GM5 | [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper5.pdf)  |
+| **Topic 1**| GM1 | [Link]()  |
+| **Topic 2**| GM2 | [Link]()  |
+| **Topic 3**| GM3 | [Link]()  |
+| **Topic 4**| GM4 | [Link]()  |
+| **Topic 5**| GM5 | [Link]()  |
