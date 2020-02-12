@@ -34,7 +34,7 @@ In order to ensure the smoothness of the workshop, please follow the instruction
 | **Metabolomics**| Abdellah Tebani| [Link]() | [Link]()  |
 | **Metagenomics**| Ozlem Altay| Link | Link  |
 | **Genome Scale Metabolic Modelling**| Cheng Zhang | [Link]() | [Link]()  |
-| **Topic**| Xiangyu Li | [Link]() | [Link]()  |
+| **Transcript-centic analysis and REOs analysis**| Xiangyu Li | [Link]() | [Link]()  |
 | **Multi-Omics Integration**| Rui Benfeitas| [Link]() | [Link]()  |
 
 ## Mini Seminar
