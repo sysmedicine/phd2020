@@ -51,25 +51,25 @@ $ kallisto quant -i [AnyIndexName] -o /path_where_you_want/to_store_your_result/
 2. Open Rstudio and run this script. Don't forget to enter the path to the unzipped folder. This script is combining multiple samples into a big dataframe of count and TPM values. Remember, this is still in transcript level.
 
 ```R
-result_dir= # The directory that includes the extracted folders
+result_dir = 'data/' # The directory that includes the extracted folders
 
-count = data.frame()
-tpm = data.frame()
+count_tr = data.frame()
+tpm_tr = data.frame()
 
 for(i in list.dirs(result_dir,recursive=F)){
-  temp=read.csv(paste0(i,'/abundance.tsv'),sep='\t',stringsAsFactors = F)
-  temp_count=data.frame(temp$est_counts)
-  temp_tpm=data.frame(temp$tpm)
-  colnames(temp_count)=gsub("data//", "", i)
-  colnames(temp_tpm)=gsub("data//", "", i)
-  if(ncol(count) == 0){
-    count=temp_count
-    rownames(count)=temp$target_id
-    tpm=temp_tpm
-    rownames(tpm)=temp$target_id
+  temp = read.csv(paste0(i,'/abundance.tsv'),sep='\t',stringsAsFactors = F)
+  temp_count = data.frame(temp$est_counts)
+  temp_tpm = data.frame(temp$tpm)
+  colnames(temp_count) = gsub("data//", "", i)
+  colnames(temp_tpm) = gsub("data//", "", i)
+  if(ncol(count_tr) == 0){
+    count_tr = temp_count
+    rownames(count_tr) = temp$target_id
+    tpm_tr = temp_tpm
+    rownames(tpm_tr) = temp$target_id
   } else {
-    count = cbind(count, temp_count)
-    tpm = cbind(tpm,temp_tpm)
+    count_tr = cbind(count_tr, temp_count)
+    tpm_tr = cbind(tpm_tr,temp_tpm)
   }
 }
 ```
@@ -77,7 +77,16 @@ for(i in list.dirs(result_dir,recursive=F)){
 3. Combining the transcripts into the gene names: Merge the transcripts into gene names. Remember that earlier we chose only protein_coding gene and transcripts mapping from Biomart.
 
 ```R
-res <- deseq(haha)
+biomart_file = 'mart_export.txt' #adjust this based on your file location
+mapping = read.csv(biomart_file,sep='\t',stringsAsFactors = F,row.names = 1)
+count_gn = merge(count_tr,mapping['Gene.name'], by=0,all=F) # merge only for the shared row names
+count_gn = count_gn[,2:ncol(count_gn)]
+count_gn = aggregate(.~Gene.name, count_gn, sum)
+rownames(count_gn) = count_gn$Gene.name 
+tpm_gn = merge(tpm_tr,mapping['Gene.name'], by=0,all=F) # merge only for the shared row names
+tpm_gn = tpm_gn[,2:ncol(tpm_gn)]
+tpm_gn = aggregate(.~Gene.name, tpm_gn, sum)
+rownames(tpm_gn) = tpm_gn$Gene.name
 ```
 
 **Question: How many protein coding transcripts and genes that we have?**
@@ -85,7 +94,8 @@ res <- deseq(haha)
 4. Save the count and TPM table as tab-separated format.
 
 ```R
-res <- deseq(haha)
+write.table(count_gn,file='/path_to_save/count_gene.txt',sep = '\t', na = '',row.names = F)
+write.table(tpm_gn,file='/path_to_save/tpm_gene.txt',sep = '\t', na = '',row.names = F)
 ```
 ### Data Exploration
 
@@ -96,13 +106,18 @@ Once we have the consolidated table, we have to look at the data to understand i
 **Question: Why TPM and not raw count?**
 
 ```R
-res <- deseq(haha)
+metadata_file = 'metadata.txt' #adjust this based on your file location
+metadata = read.csv(metadata_file,sep='\t',stringsAsFactors = F,row.names = 1)
+
+tpm_file = 'tpm_gene.txt' #adjust this based on your file location
+tpm = read.csv(tpm_file,sep='\t',stringsAsFactors = F,row.names = 1)[,rownames(metadata)] # make sure that sequence of metadata is the same with tpm
 ```
 
 2. Perform the PCA with the script below.
 
 ```R
-res <- deseq(haha)
+PCA=prcomp(t(tpm), scale=F)
+plot(PCA$x,pch = 15,col=c('blue','red','lightgreen','black'))
 ```
 
 **Question: What do you think of the sample separations?**
