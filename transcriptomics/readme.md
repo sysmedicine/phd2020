@@ -128,17 +128,22 @@ plot(PCA$x,pch = 15,col=c('blue','red','lightgreen','black'))
 To perform differential expression analysis, we will use a package in R called [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html).
 
 1. Load the count and metadata to R
-```R
-res <- deseq(haha)
-```
-
-2. Perform the Differential Expression Analysis
 **Question: Why count and not TPM?**
 
 ```R
+metadata_file = 'metadata.txt' #adjust this based on your file location
+metadata = read.csv(metadata_file,sep='\t',stringsAsFactors = F,row.names = 1)
+
+count_file = 'count_gene.txt' #adjust this based on your file location
+count = read.csv(count_file,sep='\t',stringsAsFactors = F,row.names = 1)[,rownames(metadata)] # make sure that sequence of metadata is the same with tpm
+```
+
+2. Perform the Differential Expression Analysis
+
+```R
 library('DESeq2')
-conds=as.factor(conds)
-coldata <- data.frame(row.names=subject,conds)
+metadata=as.factor(metadata$condition)
+coldata <- data.frame(row.names=rownames(metadata),metadata)
 dds <- DESeqDataSetFromMatrix(countData=as.matrix(count),colData=coldata,design=~conds)
 dds <- DESeq(dds)
 ```
@@ -146,22 +151,19 @@ dds <- DESeq(dds)
 3. Retrieve the specific comparison results. For now, retrive comparison between MI_1D vs SHAM_1D.
 
 ```R
-cond1 = MI_1D #First Condition
-cond2 = SHAM_1D #Reference Condition
+cond1 = 'MI_1D' #First Condition
+cond2 = 'SHAM_1D' #Reference Condition
 res=results(dds,contrast=c('conds',cond1,cond2))
 res=data.frame(res)
 ```
 
-4. Retrive comparison between MI_3D vs SHAM_3D as well
-
-5. Save it as TSV file
+4. Save it as TSV file
 
 ```R
-cond1 = MI_1D #First Condition
-cond2 = SHAM_1D #Reference Condition
-res=results(dds,contrast=c('conds',cond1,cond2))
-res=data.frame(res)
+write.table(res,file='/path_to_save/deseq_1D.txt',sep = '\t', na = '',row.names = F)
 ```
+
+5. Retrive and save comparison between MI_3D vs SHAM_3D as well
 
 6. Open the saved result for MI_1D vs SHAM_1D.
 
