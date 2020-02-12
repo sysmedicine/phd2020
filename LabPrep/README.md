@@ -99,7 +99,7 @@ The steps were validated to work properly in the OS below:
 
 7. Download R script for the installation
 > #MacOSX  
-> curl -o env.yaml https://raw.githubusercontent.com/sysmedicine/phd2020/master/LabPrep/R_install_pkgs.R
+> curl -o R_install_pkgs.R https://raw.githubusercontent.com/sysmedicine/phd2020/master/LabPrep/R_install_pkgs.R
 
 > #Linux  
 > wget https://raw.githubusercontent.com/sysmedicine/phd2020/master/LabPrep/R_install_pkgs.R
