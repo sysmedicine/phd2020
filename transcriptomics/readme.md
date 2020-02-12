@@ -163,10 +163,66 @@ res=data.frame(res)
 write.table(res,file='/path_to_save/deseq_1D.txt',sep = '\t', na = '',row.names = F)
 ```
 
-5. Retrive and save comparison between MI_3D vs SHAM_3D as well
+5. Retrive and save comparison between "MI_3D" vs "SHAM_3D" as well
 
-6. Open the saved result for MI_1D vs SHAM_1D.
+6. Open the saved result for "MI_1D" vs "SHAM_1D".
 
-**Question: With Adjusted P-value < 0.05, how many genes are significantly differentially up-regulated? down-regulated? (HINT: Look at Log2FoldChange) What is the most affected gene?**
+**Question: With Adjusted P-value < 0.05, how many genes are significantly differentially up-regulated? down-regulated? (HINT: Look at Log2FoldChange) What is the most affected gene? (HINT: sort it based on Adjusted P-Value)**
 
 ![deseq](img/deseq.png)
+
+### Functional Analysis
+
+The goal of this analysis is to map the changes in the transcriptome level to functional level (Gene Ontology, KEGG Pathways, etc). We will use a tool in R called [PIANO](https://bioconductor.org/packages/release/bioc/html/piano.html)
+
+1. Load the differential expression result for "MI_1D" vs "SHAM_1D"
+
+```R
+cond1 = 'MI_1D' #First Condition
+cond2 = 'SHAM_1D' #Reference Condition
+res=results(dds,contrast=c('conds',cond1,cond2))
+res=data.frame(res)
+```
+
+2. Load the KEGG Pathway gene-set collection. It can be downloaded from [this link](data/KEGG.gmt)
+
+```R
+cond1 = 'MI_1D' #First Condition
+cond2 = 'SHAM_1D' #Reference Condition
+res=results(dds,contrast=c('conds',cond1,cond2))
+res=data.frame(res)
+```
+
+3. Perform the functional analysis with Piano
+
+```R
+cond1 = 'MI_1D' #First Condition
+cond2 = 'SHAM_1D' #Reference Condition
+res=results(dds,contrast=c('conds',cond1,cond2))
+res=data.frame(res)
+```
+
+4. Retrieve and save the result of KEGG functional analysis as TSV
+
+```R
+cond1 = 'MI_1D' #First Condition
+cond2 = 'SHAM_1D' #Reference Condition
+res=results(dds,contrast=c('conds',cond1,cond2))
+res=data.frame(res)
+```
+
+5. Redo the same analysis for GO Biological Process. The gene-set collection can be downloaded from [this link](data/KEGG.gmt)
+
+6. Redo all the steps above for "MI_3D" vs "SHAM_3D"
+
+**Question 1: How many KEGG pathways are up-regulated and down-regulated in 1D? (HINT: look at distinct adjusted p-value up and down)**
+
+**Question 2: How many GO Biological Processes are up-regulated and down-regulated in 1D? (HINT: look at distinct adjusted p-value up and down)**
+
+**Question 3: How many KEGG pathways are up-regulated and down-regulated in 3D? (HINT: look at distinct adjusted p-value up and down)**
+
+**Question 4: How many GO Biological Processes are up-regulated and down-regulated in 1D? (HINT: look at distinct adjusted p-value up and down)**
+
+**Question 5: Is it getting worse or better with time? Also which processes and pathways are specific for 1D and for 3D?**
+
+**Question 6: What can you summarize from this?**
