@@ -51,7 +51,27 @@ $ kallisto quant -i [AnyIndexName] -o /path_where_you_want/to_store_your_result/
 2. Open Rstudio and run this script. Don't forget to enter the path to the unzipped folder. This script is combining multiple samples into a big dataframe of count and TPM values. Remember, this is still in transcript level.
 
 ```R
-res <- deseq(haha)
+result_dir= # The directory that includes the extracted folders
+
+count = data.frame()
+tpm = data.frame()
+
+for(i in list.dirs(result_dir,recursive=F)){
+  temp=read.csv(paste0(i,'/abundance.tsv'),sep='\t',stringsAsFactors = F)
+  temp_count=data.frame(temp$est_counts)
+  temp_tpm=data.frame(temp$tpm)
+  colnames(temp_count)=gsub("data//", "", i)
+  colnames(temp_tpm)=gsub("data//", "", i)
+  if(ncol(count) == 0){
+    count=temp_count
+    rownames(count)=temp$target_id
+    tpm=temp_tpm
+    rownames(tpm)=temp$target_id
+  } else {
+    count = cbind(count, temp_count)
+    tpm = cbind(tpm,temp_tpm)
+  }
+}
 ```
 
 3. Combining the transcripts into the gene names: Merge the transcripts into gene names. Remember that earlier we chose only protein_coding gene and transcripts mapping from Biomart.
