@@ -42,7 +42,7 @@ $ kallisto quant -i [AnyIndexName] -o /path_where_you_want/to_store_your_result/
 
 4. Once the process is completed, in your output directory, you will have several files: "abundance.h5", "abundance.tsv", "run_info.json". Open "abundance.tsv" in excel, and see what data that you get from Kallisto (hint: look at the column name)
 
-### Consolidating multiple Kallisto samples
+#### Consolidating multiple Kallisto samples
 
 **Goal:** Converting single sample tsv into two big tables with rownames of gene name and column name of the value (one for raw count, one for TPM).
 
@@ -117,7 +117,7 @@ tpm = read.csv(tpm_file,sep='\t',stringsAsFactors = F,row.names = 1)[,rownames(m
 
 ```R
 PCA=prcomp(t(tpm), scale=F)
-plot(PCA$x,pch = 15,col=c('blue','red','lightgreen','black'))
+plot(PCA$x,pch = 15,col=c('blue','blue','red','red','lightgreen','lightgreen','black','black'))
 ```
 
 **Question: What do you think of the sample separations?**
@@ -144,7 +144,7 @@ count = read.csv(count_file,sep='\t',stringsAsFactors = F,row.names = 1)[,rownam
 library('DESeq2')
 metadata=as.factor(metadata$condition)
 coldata <- data.frame(row.names=rownames(metadata),metadata)
-dds <- DESeqDataSetFromMatrix(countData=as.matrix(count),colData=coldata,design=~conds)
+dds <- DESeqDataSetFromMatrix(countData=round(as.matrix(count)),colData=coldata,design=~conds)
 dds <- DESeq(dds)
 ```
 
@@ -160,14 +160,15 @@ res=data.frame(res)
 4. Save it as TSV file
 
 ```R
-write.table(res,file='/path_to_save/deseq_1D.txt',sep = '\t', na = '',row.names = F)
+write.table(res,file='/path_to_save/deseq_1D.txt',sep = '\t', na = '',row.names = T,col.names=NA)
 ```
 
 5. Retrive and save comparison between "MI_3D" vs "SHAM_3D" as well
 
 6. Open the saved result for "MI_1D" vs "SHAM_1D".
 
-**Question: With Adjusted P-value < 0.05, how many genes are significantly differentially up-regulated? down-regulated? (HINT: Look at Log2FoldChange) What is the most affected gene? (HINT: sort it based on Adjusted P-Value)**
+**Question 1: With Adjusted P-value < 0.05, how many genes are significantly differentially up-regulated? down-regulated? (HINT: Look at Log2FoldChange) What is the most affected gene? (HINT: sort it based on Adjusted P-Value)**
+**Question 2: Why do we have several genes with NA in their statistical result?**
 
 ![deseq](img/deseq.png)
 
@@ -178,42 +179,69 @@ The goal of this analysis is to map the changes in the transcriptome level to fu
 1. Load the differential expression result for "MI_1D" vs "SHAM_1D"
 
 ```R
-cond1 = 'MI_1D' #First Condition
-cond2 = 'SHAM_1D' #Reference Condition
-res=results(dds,contrast=c('conds',cond1,cond2))
-res=data.frame(res)
+deseq_file='/path_to_saved/deseq_1D.txt'
+deseq = read.csv(deseq_file,sep='\t',stringsAsFactors = F,row.names = 1)
 ```
 
 2. Load the KEGG Pathway gene-set collection. It can be downloaded from [this link](data/KEGG.gmt)
 
 ```R
-cond1 = 'MI_1D' #First Condition
-cond2 = 'SHAM_1D' #Reference Condition
-res=results(dds,contrast=c('conds',cond1,cond2))
-res=data.frame(res)
+library('piano')
+library('Biobase')
+library('snow')
+library('RColorBrewer')
+library('gplots')
+library('visNetwork')
+
+GSC='/path_to_downloaded/KEGG.gmt'
+y=loadGSC(GSC)
 ```
 
 3. Perform the functional analysis with Piano
 
 ```R
-cond1 = 'MI_1D' #First Condition
-cond2 = 'SHAM_1D' #Reference Condition
-res=results(dds,contrast=c('conds',cond1,cond2))
-res=data.frame(res)
+input_file=deseq[ ,c('log2FoldChange','pvalue')]
+logFC=as.matrix(input_file[,1])
+pval=as.matrix(input_file[,2])
+rownames(logFC)=toupper(rownames(input_file))
+rownames(pval)=toupper(rownames(input_file))
+logFC[is.na(logFC)] <- 0
+pval[is.na(pval)] <- 1
+gsaRes <- runGSA(pval,logFC,gsc=y, geneSetStat="reporter", signifMethod="nullDist", nPerm=1000)
 ```
 
 4. Retrieve and save the result of KEGG functional analysis as TSV
 
 ```R
-cond1 = 'MI_1D' #First Condition
-cond2 = 'SHAM_1D' #Reference Condition
-res=results(dds,contrast=c('conds',cond1,cond2))
-res=data.frame(res)
+res_piano=GSAsummaryTable(gsaRes)
 ```
 
-5. Redo the same analysis for GO Biological Process. The gene-set collection can be downloaded from [this link](data/KEGG.gmt)
+5. Visualize the result as heatmap and save it as PDF (you'll probably see the "Error in plot.new() : figure margins too large", ignore it for now)
+```R
+pdf("heatmap.pdf") 
+hm = GSAheatmap(gsaRes, adjusted = T)
+dev.off()
+```
 
-6. Redo all the steps above for "MI_3D" vs "SHAM_3D"
+5. Visualize the result as network of terms and save it as PDF 
+```R
+pdf("/path_to_save/network_plot.pdf") 
+nw = networkPlot(gsaRes, class="distinct", direction="both",significance=0.00005, label="names")
+dev.off() 
+```
+
+6. Generate Interactive Network and save as HTML 
+```R
+nw_int = networkPlot2(gsaRes, class="distinct", direction="both", significance=0.00005)
+#if you want to show it without saving in R, type "nw_int"
+visSave(nw_int, file = "network_plot_interactive.html", background = "white")
+```
+
+**NOTE: Adjust the significance level during network plotting if necessary (you can increase or decrease it) if necessary**
+
+7. Redo the same analysis for GO Biological Process. The gene-set collection can be downloaded from [this link](data/GO.gmt). 
+
+8. Redo all the steps above for "MI_3D" vs "SHAM_3D"
 
 **Question 1: How many KEGG pathways are up-regulated and down-regulated in 1D? (HINT: look at distinct adjusted p-value up and down)**
 
@@ -226,3 +254,52 @@ res=data.frame(res)
 **Question 5: Is it getting worse or better with time? Also which processes and pathways are specific for 1D and for 3D?**
 
 **Question 6: What can you summarize from this?**
+
+### Multiple Factor in Transcriptomic Analysis.
+
+Until now, the comparison that we are doing is a simple comparison, as in A vs B. In real-life, you might encounter a condition where we have multiple factors. Using the same example, what if we want to compare overall MI vs SHAM, and correcting it based on the day? Another example, if you have several batches with a clear batch effect, so we have to find a way to correct for it.
+
+The goal of this lab is how to consider multiple factor in transcriptomic analysis. The only difference with the previous lab is on how we approach the problem in DESeq2.
+
+1. Load the count and metadata to R (download new metadata [here](data/metadata_multi.txt))
+
+```R
+metadata_file = 'metadata_multi.txt' #adjust this based on your file location
+metadata = read.csv(metadata_file,sep='\t',stringsAsFactors = F,row.names = 1)
+
+count_file = 'count_gene.txt' #adjust this based on your file location
+count = read.csv(count_file,sep='\t',stringsAsFactors = F,row.names = 1)[,rownames(metadata)] # make sure that sequence of metadata is the same with tpm
+```
+
+2. Create Model Matrix
+
+```R
+library('DESeq2')
+model=model.matrix(~MI+day,metadata)
+```
+
+3. Perform Differential Expression analysis
+
+**Question: What is the difference between this and the previous deseq step?**
+
+```R
+dds <- DESeqDataSetFromMatrix(countData=round(as.matrix(count)),colData=coldata,design=~conds)
+dds <- DESeq(dds)
+```
+
+3. Retrieve the specific comparison results. For now, retrive comparison between MI_1D vs SHAM_1D.
+
+```R
+cond = 'MI1' #First Condition
+res=results(dds,contrast=list(c(cond)))
+res=data.frame(res)
+```
+
+4. Save it as TSV file
+
+```R
+write.table(res,file='/path_to_save/deseq_multifactor.txt',sep = '\t', na = '',row.names = T,col.names=NA)
+```
+
+5. Perform the Functional Analysis on this Multifactor analysis and compare the result with single factor analysis.
+
