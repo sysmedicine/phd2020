@@ -18,6 +18,8 @@ Google Maps: [Tomtebodavägen 23a, 171 65 Solna](https://goo.gl/maps/nBkAmDXNd7t
 
 In order to ensure the smoothness of the workshop, please follow the instruction in this [Workshop Preparation](https://github.com/sysmedicine/phd2020/tree/master/LabPrep) page. Please do this as soon as humanly possible and contact us if you find any problem during the preparation
 
+On top of that, please do the preparation for [GEM in MATLAB](https://github.com/sysmedicine/phd2020/blob/master/GEM/preparation.md)
+
 **OBS:** This step might take a while to be completed, so please do it **BEFORE** the course.
 
 ## Course Schedule (Tentative)
