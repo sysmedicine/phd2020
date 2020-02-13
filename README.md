@@ -32,7 +32,7 @@ On top of that, please do the preparation for [GEM in MATLAB](https://github.com
 |:-|:-|:-|:-|
 | **Introduction to Systems Biology**| Adil Mardinoglu| [Link]() | N/A  |
 | **Proteomics**| Fredrik Edfors| [Link]() | [Link]()  |
-| **Transcriptomics**| Muhammad Arif| [Link]() | [Link]()  |
+| **Transcriptomics**| Muhammad Arif| [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/transcriptomics/slides/transcriptomics_phd2020.pptx) | [Link](https://github.com/sysmedicine/phd2020/tree/master/transcriptomics)  |
 | **Metabolomics**| Abdellah Tebani| [Link]() | [Link]()  |
 | **Metagenomics**| Ozlem Altay| Link | Link  |
 | **Genome Scale Metabolic Modelling**| Cheng Zhang | [Link]() | [Link]()  |
