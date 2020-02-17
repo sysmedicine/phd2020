@@ -142,8 +142,8 @@ count = read.csv(count_file,sep='\t',stringsAsFactors = F,row.names = 1)[,rownam
 
 ```R
 library('DESeq2')
-metadata=as.factor(metadata$condition)
-coldata <- data.frame(row.names=rownames(metadata),metadata)
+conds=as.factor(metadata$condition)
+coldata <- data.frame(row.names=rownames(metadata),conda)
 dds <- DESeqDataSetFromMatrix(countData=round(as.matrix(count)),colData=coldata,design=~conds)
 dds <- DESeq(dds)
 ```
