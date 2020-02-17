@@ -239,7 +239,7 @@ visSave(nw_int, file = "network_plot_interactive.html", background = "white")
 
 **NOTE: Adjust the significance level during network plotting if necessary (you can increase or decrease it) if necessary**
 
-7. Redo the same analysis for GO Biological Process. The gene-set collection can be downloaded from [this link](data/GO.gmt). 
+7. Redo the same analysis for GO Biological Process. The gene-set collection can be downloaded from [this link](data/GOBP.gmt). 
 
 8. Redo all the steps above for "MI_3D" vs "SHAM_3D"
 
