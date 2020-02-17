@@ -43,9 +43,9 @@ On top of that, please do the preparation for [GEM in MATLAB](https://github.com
 
 | Topic        | Keynote Speaker | Slide|
 |:-|:-|:-|
-| **Topic 1**| Keynote 1| [Link]() |
-| **Topic 2**| Keynote 2| [Link]()  |
-| **Topic 3**| Keynote 3| [Link]()  |
+| **Topic 1**| Lukas Käll | [Link]() |
+| **Topic 2**| Mathias Uhlén | [Link]()  |
+| **Topic 3**| TBD | [Link]()  |
 
 ## Student Presentations
 In this course, we will have students presentations. All group has 15 minutes to present one state-of-the-art paper from Systems Biology field, followed by 15 minutes Q&A. You will be given the group distribution by first day of the course and also you will have 90 minutes on Thursday to finish the presentation
