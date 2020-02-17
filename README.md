@@ -52,8 +52,8 @@ In this course, we will have students presentations. All group has 15 minutes to
 
 | Topic        | Members | Link to paper|
 |:-|:-|:-|
-| **Topic 1**| GM1 | [Link]()  |
-| **Topic 2**| GM2 | [Link]()  |
-| **Topic 3**| GM3 | [Link]()  |
-| **Topic 4**| GM4 | [Link]()  |
-| **Topic 5**| GM5 | [Link]()  |
+| **Group 1**| [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper1.pdf)  |
+| **Group 2**| [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper2.pdf)  |
+| **Group 3**| [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper3.pdf)  |
+| **Group 4**| [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper4.pdf)  |
+| **Group 5**| [Link](https://github.com/sysmedicine/phd2020/raw/master/papers/paper5.pdf)  |
