@@ -33,7 +33,7 @@ On top of that, please do the preparation for [GEM in MATLAB](https://github.com
 | **Introduction to Systems Biology**| Adil Mardinoglu| [Part 1](https://github.com/sysmedicine/phd2020/raw/master/intro/20200217%20PhD%20course%201.pptx) | [Part 2](https://github.com/sysmedicine/phd2020/raw/master/intro/20200217%20PhD%20course%202.pptx)  |
 | **Proteomics**| Fredrik Edfors| [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/proteomics/Proteomics_FE.pptx) | [Link]()  |
 | **Transcriptomics**| Muhammad Arif| [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/transcriptomics/slides/transcriptomics_phd2020.pptx) | [Link](https://github.com/sysmedicine/phd2020/tree/master/transcriptomics)  |
-| **Metabolomics**| Abdellah Tebani| [Link]() | [Link]()  |
+| **Metabolomics**| Abdellah Tebani| [Link]() | [Link](https://github.com/sysmedicine/phd2020/raw/master/metabolomics/data/metabolomics_sysmed_2020.zip)  |
 | **Metagenomics**| Ozlem Altay| [Link]() | [Link]()  |
 | **Genome Scale Metabolic Modelling**| Cheng Zhang | [Link]() | [Link](https://github.com/sysmedicine/phd2020/tree/master/GEM)  |
 | **Transcript-centic and REOs analysis**| Xiangyu Li | [Link]() | [Link]()  |
