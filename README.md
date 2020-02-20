@@ -22,7 +22,7 @@ On top of that, please do the preparation for [GEM in MATLAB](https://github.com
 
 **OBS:** This step might take a while to be completed, so please do it **BEFORE** the course.
 
-## Course Schedule (Tentative)
+## Course Schedule
 
 ![alt text](https://github.com/sysmedicine/phd2020/raw/master/img/schedule.png "Schedule")
 
@@ -45,7 +45,6 @@ On top of that, please do the preparation for [GEM in MATLAB](https://github.com
 |:-|:-|:-|
 | **Topic 1**| Lukas Käll | [Link]() |
 | **Topic 2**| Mathias Uhlén | [Link]()  |
-| **Topic 3**| TBD | [Link]()  |
 
 ## Student Presentations
 In this course, we will have students presentations. All group has 15 minutes to present one state-of-the-art paper from Systems Biology field, followed by 15 minutes Q&A. You will be given the group distribution by first day of the course and also you will have 90 minutes on Thursday to finish the presentation
