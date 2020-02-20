@@ -60,8 +60,8 @@ for(i in list.dirs(result_dir,recursive=F)){
   temp = read.csv(paste0(i,'/abundance.tsv'),sep='\t',stringsAsFactors = F)
   temp_count = data.frame(temp$est_counts)
   temp_tpm = data.frame(temp$tpm)
-  colnames(temp_count) = gsub("data//", "", i)
-  colnames(temp_tpm) = gsub("data//", "", i)
+  colnames(temp_count) = gsub(paste0(result_dir,"/"), "", i)
+  colnames(temp_tpm) = gsub(paste0(result_dir,"/"), "", i)
   if(ncol(count_tr) == 0){
     count_tr = temp_count
     rownames(count_tr) = temp$target_id
