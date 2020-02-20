@@ -34,7 +34,7 @@ On top of that, please do the preparation for [GEM in MATLAB](https://github.com
 | **Proteomics**| Fredrik Edfors| [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/proteomics/Proteomics_FE.pptx) | [Link](https://docs.google.com/document/d/1Ft0WkGn3mR2rF4dfgwxpdPqfv6_dSfcdTSCwDIIEykQ/edit#)  |
 | **Transcriptomics**| Muhammad Arif| [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/transcriptomics/slides/transcriptomics_phd2020.pptx) | [Link](https://github.com/sysmedicine/phd2020/tree/master/transcriptomics)  |
 | **Metabolomics**| Abdellah Tebani| [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/metabolomics/Dr_Abdellah_TEBANI_Metabolomics_SysMed_2020.pdf) | [Link](https://github.com/sysmedicine/phd2020/raw/master/metabolomics/data/metabolomics_sysmed_2020.zip)  |
-| **Metagenomics**| Ozlem Altay| [Link]() | [Link](https://github.com/sysmedicine/phd2020/tree/master/metagenomics)  |
+| **Metagenomics**| Ozlem Altay| [Link](https://github.com/sysmedicine/phd2020/tree/master/metagenomics/20200212_AAA_PhDCourse.pptx) | [Link](https://github.com/sysmedicine/phd2020/tree/master/metagenomics)  |
 | **Genome Scale Metabolic Modelling**| Cheng Zhang | [Link]() | [Link](https://github.com/sysmedicine/phd2020/tree/master/GEM)  |
 | **Transcript-centic and REOs analysis**| Xiangyu Li | [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/REO/Day4_Transcript_and_REOs-based_analysis.pptx) | N/A  |
 | **Multi-Omics Integration**| Rui Benfeitas| [Link]() | [Link]()  |
