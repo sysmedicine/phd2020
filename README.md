@@ -30,7 +30,7 @@ On top of that, please do the preparation for [GEM in MATLAB](https://github.com
 
 | Topic| Teacher| Slide| Workshop|
 |:-|:-|:-|:-|
-| **Introduction to Systems Biology**| Adil Mardinoglu| [Part 1](https://github.com/sysmedicine/phd2020/raw/master/intro/20200217%20PhD%20course%201.pptx) | [Part 2](https://github.com/sysmedicine/phd2020/raw/master/intro/20200217%20PhD%20course%202.pptx)  |
+| **Introduction to Systems Biology**| Adil Mardinoglu| [Part 1](https://github.com/sysmedicine/phd2020/raw/master/intro/20200217%20PhD%20course%201.pptx) [Part 2](https://github.com/sysmedicine/phd2020/raw/master/intro/20200217%20PhD%20course%202.pptx) | N/A  |
 | **Proteomics**| Fredrik Edfors| [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/proteomics/Proteomics_FE.pptx) | [Link](https://docs.google.com/document/d/1Ft0WkGn3mR2rF4dfgwxpdPqfv6_dSfcdTSCwDIIEykQ/edit#)  |
 | **Transcriptomics**| Muhammad Arif| [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/transcriptomics/slides/transcriptomics_phd2020.pptx) | [Link](https://github.com/sysmedicine/phd2020/tree/master/transcriptomics)  |
 | **Metabolomics**| Abdellah Tebani| [Link](https://raw.githubusercontent.com/sysmedicine/phd2020/master/metabolomics/Dr_Abdellah_TEBANI_Metabolomics_SysMed_2020.pdf) | [Link](https://github.com/sysmedicine/phd2020/raw/master/metabolomics/data/metabolomics_sysmed_2020.zip)  |
