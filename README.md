@@ -43,7 +43,7 @@ On top of that, please do the preparation for [GEM in MATLAB](https://github.com
 
 | Topic        | Keynote Speaker | Slide|
 |:-|:-|:-|
-| **Topic 1**| Lukas Käll | [Link]() |
+| **Topic 1**| Lukas Käll | [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/BayesianSysMed.pdf) |
 | **Topic 2**| Mathias Uhlén | [Link]()  |
 
 ## Student Presentations
