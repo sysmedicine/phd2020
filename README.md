@@ -44,7 +44,7 @@ On top of that, please do the preparation for [GEM in MATLAB](https://github.com
 | Topic        | Keynote Speaker | Slide|
 |:-|:-|:-|
 | **Topic 1**| Lukas Käll | [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/BayesianSysMed.pdf) |
-| **Topic 2**| Mathias Uhlén | [Link]()  |
+| **Topic 2**| Mathias Uhlén | [Link](https://github.com/sysmedicine/phd2020/raw/master/miniSeminar/Uhlen_sysbio2020.pdf)  |
 
 ## Student Presentations
 In this course, we will have students presentations. All group has 15 minutes to present one state-of-the-art paper from Systems Biology field, followed by 15 minutes Q&A. You will be given the group distribution by first day of the course and also you will have 90 minutes on Thursday to finish the presentation
